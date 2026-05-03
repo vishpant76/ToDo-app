@@ -1,7 +1,10 @@
-// index.js
 import "./styles.css";
-import { greeting } from "./greeting.js";
-// src/index.js
-// import odinImage from "./odin.png";
+import { addProject, setCurrentProject } from "./state.js";
+import { initDOM, render } from "./dom.js";
 
-console.log(greeting);
+// initial setup
+const p1 = addProject("Default");
+setCurrentProject(p1.id);
+
+initDOM();
+render();

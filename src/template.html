@@ -3,7 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>To-Do List app</title>
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <h2>Projects</h2>
+
+        <form id="project-form">
+          <input type="text" placeholder="New project..." required />
+          <button>Add</button>
+        </form>
+
+        <div class="projects"></div>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div>
+            <h2 class="project-title"></h2>
+            <p class="task-count"></p>
+          </div>
+
+          <button class="add-task-btn">+ Add Task</button>
+        </div>
+
+        <form id="todo-form" class="hidden">
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Description" />
+          <input type="date" />
+          <select>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+          <button>Add Task</button>
+        </form>
+
+        <div class="todos"></div>
+      </main>
+    </div>
+  </body>
 </html>
